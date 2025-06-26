@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: rgb(56, 109, 131);
+    color: #fff;
+    height: 90px;
+    min-width: 100vh;
+}
+
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+}
+
+.header-list {
+    padding: 30px 40px;
+    white-space: nowrap;
+}
+
+.header-list a {
+    margin-right: 20px;
+    color: #b1ccce;
+    display: inline-block;
+    background-color: #4b595a;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.header-list a:hover{
+    background-color: #829c9e;
+}
+
+.main {
+    float: left;
+    padding: 20px 40px;
+}
+
+.leader {
+    margin-top: 20px;
+}
+
+.member {
+    margin-top: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+    box-shadow: 0 0 10px #2f5167;
+    transition: tranceform 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.55);
+}
+
+.person2 {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  min-width: 100vh;
+}
+
+.footer-logo {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.footer-form {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-select {
+    position: relative;
+    width: 200px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.position-select {
+    position: relative;
+    width: 200px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.selected {
+    background-color: #ffeaea71;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.selected::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.selected-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: #868a8d;
+    background-color: #ffeaeaea;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    z-index: 10;
+}
+
+.selected-options li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #b9b5b5e1;
+}
+
+.selected-options li:hover{
+    background-color: #c9b9b9ea;
+}
+
+.otoko:hover{
+    border-radius:10px 10px 0 0;
+}
+
+.onna:hover{
+    border-radius: 0 0 10px 10px;
+}
+
+.zenei:hover{
+    border-radius:10px 10px 0 0;
+}
+
+.koei:hover{
+    border-radius: 0 0 10px 10px;
+}
+
+.nenrei-select {
+    position: relative;
+    width: 200px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.jyudai:hover{
+    border-radius:10px 10px 0 0;
+}
+
+.hatijyudai:hover{
+    border-radius: 0 0 10px 10px;
+}
+
+.selected-options li:last-child{
+    border-bottom: none;
+}
+
+.date-select {
+    margin-top: 10px;
+    position: relative;
+    width: 200px;
+    font-family: sans-serif;
+}
+
+.date-picker {
+    display: none;
+    margin-top: 5px;
+}
+
+.komennto {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+
+input[type="submit"] {
+    width: 100px;
+    padding: 12px 20px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #c9b9b9ea;
+}
+

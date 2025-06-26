@@ -1,0 +1,15 @@
+/*最初にログインページの文字の色とかつけよう*/
+h2{
+    color:darkgrey;
+    font-family: Yu Gothic;
+    width: 500px; 
+    border-bottom: 5px solid gray;
+}
+input {
+    padding: 8px;
+    margin-bottom: 0px;
+}
+.button {
+    padding: 10px px;
+    margin-top: 10px;
+}
